@@ -36,7 +36,7 @@
     &--white {
         background-color: $color-white;
         color: $color-grey-dark;
-
+        margin: 0 2rem;
         &::after {
             background-color: $color-white;
         }
@@ -45,7 +45,7 @@
     &--green {
         background-color: $color-primary;
         color: $color-white;
-
+        margin: 2rem 2rem;
         &::after {
             background-color: $color-primary;
         }

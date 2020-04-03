@@ -30,13 +30,15 @@
         transition: all .5s .2s;
     }
 
-    &__left {
-        width: 33.333333%;
+    &__right {
+        width: 40%;
         display: table-cell;
+        vertical-align: middle;
+        padding: 3rem 5rem;
     }
 
-    &__right {
-        width: 66.6666667%;
+    &__left {
+        width: 60%;
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
@@ -55,7 +57,7 @@
         -moz-column-gap: 4rem; //1em = 14px;
         -moz-column-rule: 1px solid $color-grey-light-2;
 
-        column-count: 2;
+        // column-count: 2;
         column-gap: 4rem; //1em = 14px;
         column-rule: 1px solid $color-grey-light-2;
 
