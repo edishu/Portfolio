@@ -151,7 +151,6 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #004e92, #000428);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: .2rem;
@@ -165,6 +164,12 @@ body {
   .heading-fifth:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .heading-fifth--red {
+    background-image: linear-gradient(to right, #333333, #dd1818); }
+  .heading-fifth--blue {
+    background-image: linear-gradient(to right, #004e92, #000428); }
+  .heading-fifth--orange {
+    background-image: linear-gradient(to right, #ffb900, #ff7730); }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -236,16 +241,30 @@ body {
 .btn--white {
   background-color: #fff;
   color: #777;
-  margin: 0 2rem; }
+  margin: 1rem 2rem; }
   .btn--white::after {
     background-color: #fff; }
 
-.btn--green {
+.btn--blue {
   background-color: #0c2461;
   color: #fff;
-  margin: 2rem 2rem; }
-  .btn--green::after {
+  margin: 2rem 2rem 0rem 0rem; }
+  .btn--blue::after {
     background-color: #0c2461; }
+
+.btn--red {
+  background-color: #dd1818;
+  color: #fff;
+  margin: 2rem 2rem 0rem 0rem; }
+  .btn--red::after {
+    background-color: #dd1818; }
+
+.btn--orange {
+  background-color: #ff7730;
+  color: #fff;
+  margin: 2rem 2rem 0rem 0rem; }
+  .btn--orange::after {
+    background-color: #ff7730; }
 
 .btn::after {
   content: "";
@@ -304,11 +323,11 @@ body {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+        background-image: linear-gradient(to right bottom, #333333, #dd1818); }
       .card__side--back-2 {
         background-image: linear-gradient(to right bottom, #004e92, #000428); }
       .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -322,11 +341,11 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/hamburger.jpg); }
+      background-image: linear-gradient(to right bottom, #333333, #dd1818), url(../img/paperBag.jpg); }
     .card__picture--2 {
       background-image: linear-gradient(to right bottom, #004e92, #000428), url(../img/chain-yellow.jpg); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/hamburger.jpg); }
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/hamburger.jpg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -342,11 +361,11 @@ body {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(51, 51, 51, 0.85), rgba(221, 24, 24, 0.85)); }
     .card__heading-span--2 {
       background-image: linear-gradient(to right bottom, rgba(0, 78, 146, 0.85), rgba(0, 4, 40, 0.85)); }
     .card__heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
   .card__details {
     padding: 3rem; }
     .card__details ul {
@@ -502,7 +521,7 @@ body {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     border-bottom: 3px solid #0c2461; }
   .form__input:focus:invalid {
-    border-bottom: 3px solid #ff7730; }
+    border-bottom: 3px solid #dd1818; }
   .form__input::-webkit-input-placeholder {
     color: #999; }
 

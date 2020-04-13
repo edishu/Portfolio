@@ -36,18 +36,36 @@
     &--white {
         background-color: $color-white;
         color: $color-grey-dark;
-        margin: 0 2rem;
+        margin: 1rem 2rem;
         &::after {
             background-color: $color-white;
         }
     }
 
-    &--green {
+    &--blue {
         background-color: $color-primary;
         color: $color-white;
-        margin: 2rem 2rem;
+        margin: 2rem 2rem 0rem 0rem;
         &::after {
             background-color: $color-primary;
+        }
+    }
+
+    &--red {
+        background-color: $color-secondary-dark;
+        color: $color-white;
+        margin: 2rem 2rem 0rem 0rem;
+        &::after {
+            background-color: $color-secondary-dark;
+        }
+    }
+
+    &--orange {
+        background-color: $color-tertiary-dark;
+        color: $color-white;
+        margin: 2rem 2rem 0rem 0rem;
+        &::after {
+            background-color: $color-tertiary-dark;
         }
     }
     
